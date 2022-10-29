@@ -20,10 +20,49 @@ body {
     background-color: whitesmoke;
     align-items: center;
     justify-content: center;
-  margin-top: 120px;
+    margin-top: 120px;
+    border-radius: 30px 30px;
 }
+
+/*  begin */
 
 #begin {
     text-align: center;
+    cursor: pointer;
 }
 
+#begin:hover {
+    background: gray;
+    color: black;
+}
+
+/* rule */
+
+#rule {
+    height: auto;
+    width: 500px;
+    padding: 20px;
+    background: whitesmoke;
+    border-radius: 30px 10px;
+    border: 2px solid black;
+}
+
+#rule h3 {
+    font-size: 19px;
+    color: black;
+}
+
+#rule h4 {
+    height: 20px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+#rule #button {
+    height: 50px;
+    width: 100%;
+    display: flex;
+   justify-content: flex-end;
+}
