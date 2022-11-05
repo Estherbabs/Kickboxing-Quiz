@@ -15,9 +15,9 @@ body {
 }
 
 #container {
-    width: 700px;
-    height: 300px;
-    background-color: whitesmoke;
+    width: 900px;
+    height: 350px;
+    background-color: white;
     align-items: center;
     justify-content: center;
     margin-top: 120px;
@@ -45,6 +45,7 @@ body {
     background: whitesmoke;
     border-radius: 30px 10px;
     border: 2px solid black;
+    margin-top: 10px;
 }
 
 #rule h3 {
@@ -97,4 +98,59 @@ body {
   .myform {
     text-align: center;
     margin-top: 10px;
+  }
+
+  .wrapper{
+    width: 900px;
+    height: 350px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    border-radius: 30px 30px;
+  }
+
+  .quiz{
+    display: grid;
+    grid-template-rows: 30px auto;
+   
+    border-radius: 30px 30px;
+  }
+
+  .guru_header{
+    display:flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: white;
+    z-index: 1;
+
+  }
+
+  .guru_user{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 30px;
+  }
+
+  .guru_body{
+    padding-left: 20px 30px;
+    background-color: white;
+  }
+
+  .option_group{
+    list-style-type: none;
+    margin: 30px 0;
+  }
+
+  .option{
+    display: block;
+    width:300px;
+    background-color: grey;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    transition: 0.4s all;
   }
