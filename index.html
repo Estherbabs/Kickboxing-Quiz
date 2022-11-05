@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="container">
-
+       <a href="#home.html"></a>
         <div id="begin">
            <h2>Guru Quiz</h2>
         </div>
@@ -19,13 +19,34 @@
             <h4>* You have 15 seconds to answer each Questions.</h4>
             <h4>* You cannot exit the quiz after it begins</h4>
             <h4>* You get points when you get the correct answers</h4>
-            <div id="button">
-                <button id="exit">Exit</button>
-                <button id="continue">Continue</button>
-            </div>
+        
         </div>
+
+        <form class="myform" name="id" onsubmit="submitted(event)">
+            <h4>CHOOSE USERNAME</h4>
+    
+            <div class="input-field">
+                <i class="material-icons white-text prefix"></i>
+                <input type="text" class="white-text" id="name">
+                <label for="name"></label>
+                <p class="center"><button type="submit" class="btn blue"
+                 onclick="this.style.display='none'">Submit Username</button>
+                </p>
+            </div>
+        </form>
      
     </div>
+
+ <p class="middle"><a href="quiz.html" class="btn blue">BEGIN QUIZ</a></p>
+   
+
     <script src="assets/js/script.js"></script>
+    <script>
+        function submitted(e) {
+            e.preventDefault();
+            let username = document.forms["id"]["name"].value;
+            sessionStorage.setItem("name", username)
+        }
+    </script>
 </body>
 </html>

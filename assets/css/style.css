@@ -66,3 +66,35 @@ body {
     display: flex;
    justify-content: flex-end;
 }
+
+.input {
+    border: 3px solid black;
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    border-color: black;
+    color: black;
+    margin-top: 20px;
+}
+.btn {
+    border: 2px solid black;
+    background-color: black;
+    color: black;
+    padding: 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-color: black;
+    color: whitesmoke;
+  }
+  
+.btn:hover {
+    background-color: grey;
+    color: black;
+  }
+
+  .myform {
+    text-align: center;
+    margin-top: 10px;
+  }
