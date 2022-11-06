@@ -7,150 +7,118 @@
 }
 
 body {
-    background-image: url("../images/boxers.jpg");
+    background-image: url('../images/boxers.jpg');
     font-family: 'Poppins', sans-serif;
     background-size: cover;
-    display: grid;
-    place-items: center;
+    background-position: center;
+    height: 100vh;
 }
 
-#container {
-    width: 900px;
-    height: 350px;
-    background-color: white;
-    align-items: center;
-    justify-content: center;
-    margin-top: 120px;
-    border-radius: 30px 30px;
+.brand-logo{
+  font-size: 200%;
+    margin-left: 1rem;
+    justify-content: space-evenly;
 }
 
-/*  begin */
-
-#begin {
-    text-align: center;
-    cursor: pointer;
+.form {
+  width: 270px;
+  height: 330px;
+  color: black;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px 25px;
+  border-radius: 10px;
 }
 
-#begin:hover {
-    background: gray;
-    color: black;
+.form h2{
+  width: 220px;
+  text-align: center;
+  padding-left: -10px;
+  font-size: 35px;
+  margin-bottom: 20px;
 }
 
-/* rule */
+.form p{
+  padding-bottom: -15px;
 
-#rule {
-    height: auto;
-    width: 500px;
-    padding: 20px;
-    background: whitesmoke;
-    border-radius: 30px 10px;
-    border: 2px solid black;
-    margin-top: 10px;
 }
 
-#rule h3 {
-    font-size: 19px;
-    color: black;
+.form input {
+  width: 100%;
+  height: 35px;
+  padding-top: 5px;
+  margin-bottom: 30px;
+  background: transparent;
+  border-bottom: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
-#rule h4 {
-    height: 20px;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    font-size: 15px;
+.form input[type="submit"]{
+  width: 60%;
+  margin-left: 50px;
+  border: none;
+  height: 40px;
+  color: whitesmoke;
+  background-color: black;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
 }
 
-#rule #button {
-    height: 50px;
-    width: 100%;
-    display: flex;
-   justify-content: flex-end;
+.form input[type="submit"]:hover {
+  cursor: pointer;
+  background: black;
+  color:whitesmoke;
+  font-weight: bold;
+}
+ 
+#quiz-container{
+  width: 50%;
+  height: 330px;
+  background: white;
+  padding: 3rem 7rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px 25px;
+  border-radius: 10px;
 }
 
-.input {
-    border: 3px solid black;
-    background-color: whitesmoke;
-    color: black;
-    padding: 10px 25px;
-    font-size: 20px;
-    cursor: pointer;
-    border-color: black;
-    color: black;
-    margin-top: 20px;
+ul li{
+  list-style: none;
+  color: black;
+  margin: o.5rem;
 }
-.btn {
-    border: 2px solid black;
-    background-color: black;
-    color: black;
-    padding: 10px 25px;
-    font-size: 16px;
-    cursor: pointer;
-    border-color: black;
-    color: whitesmoke;
-  }
-  
-.btn:hover {
-    background-color: grey;
-    color: black;
-  }
 
-  .myform {
-    text-align: center;
-    margin-top: 10px;
-  }
+label{
+  cursor: pointer;
+  font-size: 1.2rem;
+  background-color: white;
+}
 
-  .wrapper{
-    width: 900px;
-    height: 350px;
-    background-color: white;
-    align-items: center;
-    justify-content: center;
-    margin-top: 120px;
-    border-radius: 30px 30px;
-  }
+h3 {
+  font-size: 1.5rem;
+}
 
-  .quiz{
-    display: grid;
-    grid-template-rows: 30px auto;
-   
-    border-radius: 30px 30px;
-  }
+div .btn{
+  display: flex;
+  justify-content: space-between;
+}
 
-  .guru_header{
-    display:flex;
-    justify-content: space-between;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    background-color: white;
-    z-index: 1;
-
-  }
-
-  .guru_user{
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding-left: 30px;
-  }
-
-  .guru_body{
-    padding-left: 20px 30px;
-    background-color: white;
-  }
-
-  .option_group{
-    list-style-type: none;
-    margin: 30px 0;
-  }
-
-  .option{
-    display: block;
-    width:300px;
-    background-color: grey;
-    margin-bottom: 20px;
-    padding: 15px 20px;
-    border-radius: 50px;
-    border: 2px solid transparent;
-    transition: 0.4s all;
-  }
+button{
+  margin-top: 2rem;
+  width: 100px;
+  padding: 0.3rem 1rem;
+  border-radius: 0.2rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  background: grey;
+}

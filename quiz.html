@@ -8,29 +8,33 @@
     <title>Guru Quiz</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="quiz">
-          <div class="guru_header">
-              <div class="guru_user">
-                <h4>WELCOME <span class="name"></span></h4>
-              </div>
-          </div>
-
-           <div class="guru_body">
-               <div id="sport_question">
-                   <!-- <ul class="guru_options"> 
-                  <li class="option">option 1</li>
-                  <li class="option">option 1</li>
-                  <li class="option">option 1</li>
-                  <li class="option">option 1</li>
-                   </ul> -->
-                </div>
-
-               <button class="btn-next" onclick="next()">Next Question</button>
-           </div>
+  <div id="quiz-container" id="quiz">
+        <h3>Kickboxing Quiz</h3>
+       <ul>
+          <li>
+            <input type="radio" id="a" class="answer">
+            <label id="option1" for="a"></label>
+          </li>
+          <li>
+            <input type="radio" id="b" class="answer">
+            <label id="option2" for="b"></label>
+          </li>
+          <li>
+            <input type="radio" id="c" class="answer">
+            <label id="option3" for="c"></label>
+          </li>
+          <li>
+            <input type="radio" id="d" class="answer">
+            <label id="option4" for="d"></label>
+          </li>
+       </ul>
+       <div class="btn">
+          <button id="btn-prev">Previous</button>
+           <button id="btn-next">Next</button>
         </div>
-
+    
     </div>
-    <script src="assets/js/script.js"></script>
+
+<script src="assets/js/script.js"></script>
 </body>
 </html>
