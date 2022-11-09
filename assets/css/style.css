@@ -18,6 +18,8 @@ body {
   font-size: 200%;
     margin-left: 1rem;
     justify-content: space-evenly;
+    color: whitesmoke;
+    display: flex;
 }
 
 .form {
@@ -77,7 +79,7 @@ body {
   font-weight: bold;
 }
  
-#quiz-container{
+.quiz-container{
   width: 50%;
   height: 330px;
   background: white;
