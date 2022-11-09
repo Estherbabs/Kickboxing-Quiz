@@ -193,12 +193,13 @@ const Data = [
         loadQuize();
       } else if (score === Data.length) {
         console.log("you reached")
-        quiz.innerHTML = `<h1> Congratulations 👏👏 <br/>You scored ${score}/${Data.length}</h1>`;
+        quiz.innerHTML = `<h1> Congratulations 😍 <br/>You scored ${score}/${Data.length}</h1>`;
       } else {
-        quiz.innerHTML = `<h1> You scored ${score}/${Data.length}`;
+        quiz.innerHTML = `<h1> 😓 You scored ${score}/${Data.length}`;
       }
     }
   }
+
   
   function PreviousQuestion() {
     if (currentQuize.valueOf() === 0) {
@@ -227,10 +228,8 @@ const Data = [
 
 
 
-  // grab username & password, store to local storage as an object
-  //ex: {username: "balh", password: "fjkfjfgjk"}
-  //conditionally render the game.html ===> if username/password doesn't exist in LS, 
-  // redirect to homepage
 
-  //validate your inpurt fields for white spaces
+ 
+
+  
 

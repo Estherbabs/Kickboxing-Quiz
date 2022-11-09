@@ -124,3 +124,81 @@ button{
   font-size: 1.2rem;
   background: grey;
 }
+
+/* Media Queries */
+
+/* for large screens size from 900px wide and down */
+@media screen and (max-width: 950px) {
+  body {
+    height: 70vh;
+  }
+
+  .quiz-container {
+    width: 95%;
+    height: 39%;
+  }
+  
+  h3{
+    font-size: 30px;
+  }
+  label{
+    font-size: 30px;
+  }
+
+  .form{
+    width: 60%;
+    height: 40%;
+  }
+
+  .form input[type="submit"] {
+    margin-left: 70px;
+  }
+
+  .form p{
+    font-size: 20px;
+  }
+}
+
+
+/*For medium screens size from 800px wide and down */
+@media screen and (max-width: 800px) {
+  body {
+    height: 67vh;
+  }
+
+  .quiz-container{
+    width: 72%;
+    height: 50%;
+  }
+
+  .form {
+    width: 80%;
+    left: 49%;
+    height: 50%;
+  }
+
+  .form input[type="submit"] {
+    margin-left: 60px;
+  }
+}
+
+/*For small screens size from 400px wide and down */
+@media  screen and (max-width: 400px) {
+  .quiz-container{
+    width: 83%;
+    height: 65%;
+  }
+
+  .brand-logo {
+    margin-left: 0rem;
+  }
+
+  .form{
+    width: 76%;
+    height: 54%;
+  }
+  .form input[type="submit"] {
+    margin-left: 47px;
+  }
+
+}
