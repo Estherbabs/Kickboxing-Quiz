@@ -169,17 +169,25 @@ button{
 
   .quiz-container{
     width: 73%;
-    height: 64%;
+    height: 60%;
   }
 
   .form {
-    width: 80%;
+    width: 55%;
     left: 49%;
     height: 50%;
   }
 
   .form input[type="submit"] {
     margin-left: 60px;
+  }
+  
+  h3{
+    font-size: 20px;
+  }
+
+  label{
+    font-size: 18px;
   }
 }
 

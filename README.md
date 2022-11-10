@@ -1,108 +1,176 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# GURU QUIZ
 
-Welcome Estherbabs,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## TABLE OF CONTENTS
+- [Introduction](#Introduction)
+- [Feature](#Feature)
+- [Existing Features](#Existing-Features)
+   - __The Quiz logo__
+   - __The login page__
+   - __The refresh button__
+   - __Quiz area__
+   - __Score card__
+- [UX &#8722; User Experience Design](#UX-&#8722;-User-Experience-Design)
+- [User Stories](#user-stories)
+- [Wireframes](#Wireframes)
+    - [All Wireframes - Separate Document](./readme-content/wireframes)
+    - [Typography](#Typography)
+    - [Imagery](#Imagery)
 
-## Gitpod Reminders
+- [Technologies](#Technologies)
+- [Testing](#Testing)
+    - [Validation Results - Separate Document]
+- [Resolved Bugs]
+- [Deployment](#Deployment)
+- [Credits](#Credits)
+- [Media](#Media)
+   
+***
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## INTRODUCTION
+I created a simplified quiz game for kickboxing lovers called guru quiz. This game consist of 10 questions including the origin, inception of Kickboxing and also some questions on the UFC.
 
-`python3 -m http.server`
+In the game, there is a login page with a background of two kickboxers, after login there is a game area. In this project is to showcase efficiency in HTML, CSS and Javascript. I hope to create a fun game for the users.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+![Screenshot 2022-09-30 at 04 39 38](https://user-images.githubusercontent.com/108898698/193185444-dc20eb29-7432-4bd4-9568-82fef8513464.png)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+***
+## FEATURES
+***
+### EXISTING FEATURES
+- __Navigation Bar__
+- Featured on all four pages, the full responsive navigation bar includes links to the Logo, Home, About Us, Gallery and Sign up page and it is identical in each page to allow access to easy navigation.
+- This section will make users navigate easily from page to page across all devices.
 
-A blue button should appear to click: _Make Public_,
+<img width="928" alt="Capture" src="https://user-images.githubusercontent.com/108898698/192704052-13d5c548-ba66-41e5-892c-057af956f395.PNG">
 
-Another blue button should appear to click: _Open Browser_.
+- __The landing page image__
+- The landing page includes a photography with a text overlay to allow users see the reason why the kids club was created. This section introduces the user to Fab Kiddies Club with an outstanding animation to attract their interest.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+<img width="941" alt="Capture" src="https://user-images.githubusercontent.com/108898698/192706124-e7a0fa95-7338-4e88-add7-800d7d399089.PNG">
 
-To log into the Heroku toolbelt CLI:
+- __Our Activities Section__
+- Our Activities section makes users see the some of the activities, we organised for the kids. This is includes to allow users get excited by joining the fab kiddies club.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+<img width="924" alt="Capture" src="https://user-images.githubusercontent.com/108898698/192707394-199c41e0-dea6-48cf-baf9-694350c25350.PNG">
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
+- __Contact Us Section__
+- This section is to allow users make more enquiries about the kiddies club. They can ask all the questions they wish to ask.
 
-## Release History
+<img width="857" alt="Capture" src="https://user-images.githubusercontent.com/108898698/192708425-eb61f1d3-3d2b-4190-9dbc-2c9ad166a167.PNG">
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- __Footer__
+- The footer section includes links to social media sites for Fab Kiddies Club. The links opens in a new tab to allow user navigate easily.
+- Users are quite interested in social media and this footer section encourages website users to keep connected via social networks.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![Screenshot 2022-09-30 at 04 19 15](https://user-images.githubusercontent.com/108898698/193182979-91c30c5d-1551-40cd-8ef4-2ccc5933c86b.png)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- __About Us__
+- This section tells the user most things the user wants to know, the person who created the club, the place and the year the club was established. Furthermore, from this about us section, users will know the intention behind creating the kiddies club.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+<img width="864" alt="Capture" src="https://user-images.githubusercontent.com/108898698/192713428-7b607088-9878-49ac-9103-02c2e2517c10.PNG">
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- __Club section__
+- This section shows a beautiful photograph of two kids pointing at the sea, with a dark overlay and our favourite quote *We love Fab kiddies club*. This section is to excite the user in the process of going through the website.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+<img width="947" alt="Capture" src="https://user-images.githubusercontent.com/108898698/192714743-bebfe207-6346-43c9-8f32-f9081b9ee079.PNG">
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- __Gallery__
+- The gallery section is to provide the website user with supporting images to see what the activities we have organised for our kids look like. 
+-This section is valuable to users as they will be able to identify the types of events we put together.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+<img width="931" alt="Capture" src="https://user-images.githubusercontent.com/108898698/192715720-c904ef11-6084-4383-8646-cbc1f34448af.PNG">
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- __Sign up page__
+- This page will encourage the users to get signed up to Fab Kiddies Club to makes kids learn while having fun.
+- The user will be asked to submit their names and email address.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+<img width="283" alt="Capture" src="https://user-images.githubusercontent.com/108898698/192716849-ce452968-bec7-455d-80fc-82fbf74b1b32.PNG">
 
-------
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
+## UX &#8722; User Experience Design
+### User Stories
+ 
+- As a first time website user, I want to know what this site is about and would like to navigate easily.
+- As a website user, I want to know the past activities organised for the kids club.
+- As a website user, I want to be able to contact the organisers and inquire or ask necessary questions.
+- As a website user, I want to be able to sign up to the website.
+As a website use, I want to be able to visit your social media handles.
+***
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+#### Wireframes
+<!-- wireframe images and link to more -->
+- Mobile, Ipad and Desktop wireframes are all available below:
+*See [here](./readme-content/wireframe) 
+***
+#### Typography
+ The fonts are imported into the CSS file from *[Google Fonts](https://fonts.google.com/)*
+- **Source San Pro** has been chosen as the main font for the title text. I chose it because it looks like its easy to read and clear for kids. The fallback family of **San Serif** maintains the personal appearance.
+***
+#### Imagery
+I wanted the website to look attractive to users, most especially kids and that's why I decided to go with pictures of kids playing, camping, making crafts and painting. All the images were downloaded from *[pexel.com](https://pexel.com/)*
+***
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Technologies
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+- *[Balsamiq](https://balsamiq.com/)*
+    - Balsamiq was used to create [wireframes](./readme-content/wireframe) for the project
+- *[Font Awesome](https://fontawesome.com/)*
+    - The project uses icons from Font Awesome version 5
+- *[Chrome DevTools](https://developer.chrome.com/docs/devtools/)*
+    - Once the website was made to a basic deployment level, this extension featured heavily as I modified sizings and spacings
+- *[Google Fonts](https://fonts.google.com/)*
+    - The fonts used in the website are imported from Google Fonts
+- *[W3C Validation Service](validator.w3.org)*
+    - I used this service to check the HTML and CSS files for errors. During development, I copied the entire text from the files and ran them through the direct input method
+***
+## Testing
+- I tested this page works in different browsers: Chrome, Safari and Firefox.
+- I have tested this project to see that it is responsive and it works as intended.
+- All website user must-haves has been addressed and tested.
+- Validation checks came back with no error.
+- I also tested with lighthouse and it reflected a desirable results.
+- All anchor elements have been tested to ensure the correct href value has been used and external links open in new tabs.
+- Each page has been run through the W3C markup validation service, the index page and CSS reports are shown below
+![index.html Validation](./readme-content/W3C-HTML.png)
+![CSS Validation](./readme-content/W3C-CSS.png)
 
-**So….?**
+- I have run the entire website through Chrome's lighthouse audit service and the results are shown below.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+![Mobile Lighthouse Results](./readme-content/lighthouse.png)
 
-**Can I opt out?**
+![Desktop Lighthouse Results](./readme-content/lighthouse.png)
+***
+## Bugs
+- No unfixed bugs
+***
+## Deployment
+Throughout the project, I have used GitHubs application. This program have allowed me to stage and commit files as and when necessary. Once committed, deploying the project to a live site has been achieved.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+- Take note of the URL provided
 
-**Anything more?**
+![URL Snip](./readme-content/url.png)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- Click the link or copy the URL to a browser to reach the deployed page
+https://estherbabs.github.io/Fab-Kiddies-Club/
 
----
+The site is now live.
+***
+## Credits
+- The codes to make the cover page was taken from the CI Love running project.
+- The codes for the foreground in my about me page was also taken from CI love running project.
 
-Happy coding!
+### Media
+- The photos are taken from [Pexels] (https://pexels.com)

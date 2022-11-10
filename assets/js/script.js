@@ -1,3 +1,5 @@
+// Login //
+
 window.addEventListener("load", function () {
 
   const localStrorageName = JSON.parse(localStorage.getItem("username"))
@@ -35,6 +37,8 @@ function validate() {
     alert("Login Failed, please enter username longer than 5 char");
   }
 }
+
+// Quiz Question //
 
 const Data = [{
     question: "Which one of these rules are allowed in Kickboxing?",
@@ -141,7 +145,7 @@ const Data = [{
   },
 
 ]
-
+ // Sourced code from a youtuber (CodeWithDarkwa) //
 const grabId = (idName) => {
 
   const ElementId = document.getElementById(idName);
