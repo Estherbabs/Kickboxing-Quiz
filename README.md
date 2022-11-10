@@ -44,7 +44,7 @@ In the game, there is a login page with a background of two kickboxers, after lo
 - Featured a logo, to allow users know the name of the quiz game.
 
 
-<img width="928" alt="Capture" src="https://user-images.githubusercontent.com/108898698/192704052-13d5c548-ba66-41e5-892c-057af956f395.PNG">
+![image](https://user-images.githubusercontent.com/108898698/201007326-54eddf4d-77d6-4d78-b305-1358f4da4e72.png)
 
 - __The landing page image__
 - The landing page includes a photography with a text overlay to allow users see the reason why the kids club was created. This section introduces the user to Fab Kiddies Club with an outstanding animation to attract their interest.
