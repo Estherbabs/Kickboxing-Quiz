@@ -40,9 +40,9 @@ In the game, there is a login page with a background of two kickboxers, after lo
 ## FEATURES
 ***
 ### EXISTING FEATURES
-- __Navigation Bar__
-- Featured on all four pages, the full responsive navigation bar includes links to the Logo, Home, About Us, Gallery and Sign up page and it is identical in each page to allow access to easy navigation.
-- This section will make users navigate easily from page to page across all devices.
+- __A quiz logo__
+- Featured a logo, to allow users know the name of the quiz game.
+
 
 <img width="928" alt="Capture" src="https://user-images.githubusercontent.com/108898698/192704052-13d5c548-ba66-41e5-892c-057af956f395.PNG">
 

@@ -139,7 +139,7 @@ button{
 
   .quiz-container {
     width: 76%;
-    height: 71%;
+    
   }
   
   h3{
@@ -169,13 +169,13 @@ button{
 
   .quiz-container{
     width: 73%;
-    height: 60%;
+   
   }
 
   .form {
     width: 55%;
     left: 49%;
-    height: 50%;
+    height: 46%;
   }
 
   .form input[type="submit"] {
