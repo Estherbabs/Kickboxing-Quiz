@@ -34,7 +34,7 @@ I created a simplified quiz game for kickboxing lovers called guru quiz. This ga
 In the game, there is a login page with a background of two kickboxers, after login there is a game area. In this project is to showcase efficiency in HTML, CSS and Javascript. I hope to create a fun game for the users.
 
 
-![Screenshot 2022-09-30 at 04 39 38](https://user-images.githubusercontent.com/108898698/193185444-dc20eb29-7432-4bd4-9568-82fef8513464.png)
+![capture 2](https://user-images.githubusercontent.com/108898698/201009623-3e8a5b4f-a47d-4556-825d-db4dddf0adef.JPG)
 
 ***
 ## FEATURES
@@ -46,88 +46,64 @@ In the game, there is a login page with a background of two kickboxers, after lo
 
 ![image](https://user-images.githubusercontent.com/108898698/201007326-54eddf4d-77d6-4d78-b305-1358f4da4e72.png)
 
-- __The landing page image__
-- The landing page includes a photography with a text overlay to allow users see the reason why the kids club was created. This section introduces the user to Fab Kiddies Club with an outstanding animation to attract their interest.
+- __The login page__
 
-<img width="941" alt="Capture" src="https://user-images.githubusercontent.com/108898698/192706124-e7a0fa95-7338-4e88-add7-800d7d399089.PNG">
+The login page includes a photograph with a login box to allow users choose a username and login into the game. The page also introduces users to Guru Quiz.
 
-- __Our Activities Section__
-- Our Activities section makes users see the some of the activities, we organised for the kids. This is includes to allow users get excited by joining the fab kiddies club.
+![Capture JPG3](https://user-images.githubusercontent.com/108898698/201025775-bde501b1-3de3-4ecd-ba88-41ef582e61b2.JPG)
 
-<img width="924" alt="Capture" src="https://user-images.githubusercontent.com/108898698/192707394-199c41e0-dea6-48cf-baf9-694350c25350.PNG">
+- __Quiz area__
+- The Quiz area is where the questions begins, this feature shows a box with different questions with buttons for previous or next. Although for this game, users are not allowed to go back, that's why a refresh button is located in the quiz area to refresh game to start from the beginning. Starting off in this quiz area gets users excited because they will allows look forward to the next question till they get to the end.
+ 
 
-
-- __Contact Us Section__
-- This section is to allow users make more enquiries about the kiddies club. They can ask all the questions they wish to ask.
-
-<img width="857" alt="Capture" src="https://user-images.githubusercontent.com/108898698/192708425-eb61f1d3-3d2b-4190-9dbc-2c9ad166a167.PNG">
+![Capture JPG4](https://user-images.githubusercontent.com/108898698/201026310-dbd7b29e-7d1e-409a-aad0-dc20e67cc21c.JPG)
 
 
-- __Footer__
-- The footer section includes links to social media sites for Fab Kiddies Club. The links opens in a new tab to allow user navigate easily.
-- Users are quite interested in social media and this footer section encourages website users to keep connected via social networks.
+- __Score card__
+- This section is to allow users see how many questions they scored right or wrong. There is an emoji is the user scored all questions right or wrong.
 
-![Screenshot 2022-09-30 at 04 19 15](https://user-images.githubusercontent.com/108898698/193182979-91c30c5d-1551-40cd-8ef4-2ccc5933c86b.png)
-
-
-
-- __About Us__
-- This section tells the user most things the user wants to know, the person who created the club, the place and the year the club was established. Furthermore, from this about us section, users will know the intention behind creating the kiddies club.
-
-<img width="864" alt="Capture" src="https://user-images.githubusercontent.com/108898698/192713428-7b607088-9878-49ac-9103-02c2e2517c10.PNG">
-
-
-- __Club section__
-- This section shows a beautiful photograph of two kids pointing at the sea, with a dark overlay and our favourite quote *We love Fab kiddies club*. This section is to excite the user in the process of going through the website.
-
-<img width="947" alt="Capture" src="https://user-images.githubusercontent.com/108898698/192714743-bebfe207-6346-43c9-8f32-f9081b9ee079.PNG">
-
-
-- __Gallery__
-- The gallery section is to provide the website user with supporting images to see what the activities we have organised for our kids look like. 
--This section is valuable to users as they will be able to identify the types of events we put together.
-
-<img width="931" alt="Capture" src="https://user-images.githubusercontent.com/108898698/192715720-c904ef11-6084-4383-8646-cbc1f34448af.PNG">
-
-- __Sign up page__
-- This page will encourage the users to get signed up to Fab Kiddies Club to makes kids learn while having fun.
-- The user will be asked to submit their names and email address.
-
-<img width="283" alt="Capture" src="https://user-images.githubusercontent.com/108898698/192716849-ce452968-bec7-455d-80fc-82fbf74b1b32.PNG">
-
-
-
+![Capture JPG5](https://user-images.githubusercontent.com/108898698/201027488-a51850a3-6815-4b27-b8e5-2aa7c3477917.JPG)
 
 
 ## UX &#8722; User Experience Design
 ### User Stories
  
-- As a first time website user, I want to know what this site is about and would like to navigate easily.
-- As a website user, I want to know the past activities organised for the kids club.
-- As a website user, I want to be able to contact the organisers and inquire or ask necessary questions.
-- As a website user, I want to be able to sign up to the website.
-As a website use, I want to be able to visit your social media handles.
-***
+- As a first time user, I want to be able to create username and navigate into the quiz area.
+- As a user, I want to be able to answer all questions and navigate to the last question.
+- As a user, I want to be able to see what I scored in answering all questions.
+- As a user, I want to be able to start the game again.
+
 
 #### Wireframes
 <!-- wireframe images and link to more -->
 - Mobile, Ipad and Desktop wireframes are all available below:
-*See [here](./readme-content/wireframe) 
+*See
+![New Wireframe 1](https://user-images.githubusercontent.com/108898698/201029580-288e14d9-6f9a-41c2-b1ba-68028dea6475.png)
+
+![New Wireframe 2](https://user-images.githubusercontent.com/108898698/201029697-fda6d88c-c31f-45fc-8094-23f7e464e018.png)
+
+![New Wireframe 3](https://user-images.githubusercontent.com/108898698/201029759-a0cd1e43-7452-42d5-b7f2-5564f44a1648.png)
+
+![New Wireframe 4](https://user-images.githubusercontent.com/108898698/201029884-463987c5-5f4c-42c9-a6a8-eccb2940e104.png)
+
+![New Wireframe 5](https://user-images.githubusercontent.com/108898698/201029978-d2af2a71-95a7-4176-9c0c-ff5b18b73b98.png)
+
+![New Wireframe 6](https://user-images.githubusercontent.com/108898698/201030067-8008eec0-fe1a-400e-9511-71305e3180d0.png)
 ***
 #### Typography
  The fonts are imported into the CSS file from *[Google Fonts](https://fonts.google.com/)*
-- **Source San Pro** has been chosen as the main font for the title text. I chose it because it looks like its easy to read and clear for kids. The fallback family of **San Serif** maintains the personal appearance.
+- **poppins** has been chosen as the main font for the title text. I chose it because it looks appealing to the quiz users and makes the questions clear. The fallback family of **San Serif** maintains the personal appearance.
 ***
 #### Imagery
-I wanted the website to look attractive to users, most especially kids and that's why I decided to go with pictures of kids playing, camping, making crafts and painting. All the images were downloaded from *[pexel.com](https://pexel.com/)*
+I liked the quiz to look sporty and appealing to users who like kickboxing or like sports. the main image used was downloaded from *[pexel.com](https://pexel.com/)*
 ***
 
 ## Technologies
 
 - *[Balsamiq](https://balsamiq.com/)*
     - Balsamiq was used to create [wireframes](./readme-content/wireframe) for the project
-- *[Font Awesome](https://fontawesome.com/)*
-    - The project uses icons from Font Awesome version 5
+- *[emojipedia](https://emojipedia.org/)*
+    - The project uses icons from emojipedia
 - *[Chrome DevTools](https://developer.chrome.com/docs/devtools/)*
     - Once the website was made to a basic deployment level, this extension featured heavily as I modified sizings and spacings
 - *[Google Fonts](https://fonts.google.com/)*
@@ -136,21 +112,21 @@ I wanted the website to look attractive to users, most especially kids and that'
     - I used this service to check the HTML and CSS files for errors. During development, I copied the entire text from the files and ran them through the direct input method
 ***
 ## Testing
-- I tested this page works in different browsers: Chrome, Safari and Firefox.
+- I tested this quiz works in different browsers: Chrome, Safari and Firefox.
 - I have tested this project to see that it is responsive and it works as intended.
-- All website user must-haves has been addressed and tested.
+- All game user must-haves has been addressed and tested.
 - Validation checks came back with no error.
 - I also tested with lighthouse and it reflected a desirable results.
 - All anchor elements have been tested to ensure the correct href value has been used and external links open in new tabs.
 - Each page has been run through the W3C markup validation service, the index page and CSS reports are shown below
-![index.html Validation](./readme-content/W3C-HTML.png)
-![CSS Validation](./readme-content/W3C-CSS.png)
+![index.html Validation](![Capture JPG7](https://user-images.githubusercontent.com/108898698/201038113-5dccb870-c6c6-4d88-9cf2-835a6765b5c8.JPG))
+![CSS Validation](![Capture JPG6](https://user-images.githubusercontent.com/108898698/201036182-c99dff60-d123-41e3-925e-c8a0ef38bfb8.JPG))
 
 - I have run the entire website through Chrome's lighthouse audit service and the results are shown below.
 
-![Mobile Lighthouse Results](./readme-content/lighthouse.png)
+![Mobile Lighthouse Results](![Capture JPG8](https://user-images.githubusercontent.com/108898698/201039481-3749f0fc-17ab-4a2d-8fee-1378d28fcbc0.JPG))
 
-![Desktop Lighthouse Results](./readme-content/lighthouse.png)
+![Desktop Lighthouse Results](![Capture JPG8](https://user-images.githubusercontent.com/108898698/201039481-3749f0fc-17ab-4a2d-8fee-1378d28fcbc0.JPG))
 ***
 ## Bugs
 - No unfixed bugs

@@ -38,13 +38,13 @@ body {
 .form h2{
   width: 220px;
   text-align: center;
-  padding-left: -10px;
+  padding-left: 10px;
   font-size: 35px;
   margin-bottom: 20px;
 }
 
 .form p{
-  padding-bottom: -15px;
+  padding-bottom: 15px;
 
 }
 
@@ -81,7 +81,7 @@ body {
  
 .quiz-container{
   width: 50%;
-  height: 330px;
+  height: 340px;
   background: white;
   padding: 3rem 7rem;
   border-radius: 0.5rem;
@@ -96,7 +96,7 @@ body {
 ul li{
   list-style: none;
   color: black;
-  margin: o.5rem;
+  margin: 0.5rem;
 }
 
 label{
