@@ -137,16 +137,16 @@ Throughout the project, I have used GitHubs application. This program have allow
 
 - Take note of the URL provided
 
-![URL Snip](./readme-content/url.png)
+![URL Snip](![Capture JPG9](https://user-images.githubusercontent.com/108898698/201040498-50aa4af7-cb70-4e62-9960-fb1cf7cb3e8d.JPG))
 
 - Click the link or copy the URL to a browser to reach the deployed page
-https://estherbabs.github.io/Fab-Kiddies-Club/
+https://estherbabs.github.io/Guru-Quiz/
 
 The site is now live.
 ***
 ## Credits
-- The codes to make the cover page was taken from the CI Love running project.
-- The codes for the foreground in my about me page was also taken from CI love running project.
+- Some of the codes from javascript was taken from a youtuber called codewithdarkwa.
+
 
 ### Media
-- The photos are taken from [Pexels] (https://pexels.com)
+- The photo is taken from [Pexels] (https://pexels.com)
