@@ -145,6 +145,23 @@ const Data = [{
   },
 
 ]
+
+
+function increaseProgressBar (incVal) {
+     const myBar = document.getElementById("myBar")
+     const questionCount = document.getElementById("question-count");
+
+     const questionCounter = parseInt(questionCount.innerText)
+     const maxQuestions = Data.length
+
+      myBar.style.width = `${(questionCounter/maxQuestions) * 100}%`;
+  
+}
+
+
+
+
+
  // Sourced code from a youtuber (CodeWithDarkwa) //
 const grabId = (idName) => {
 
@@ -186,6 +203,8 @@ function loadQuize() {
 function nextQuestion() {
   const answer = getValue();
   console.log(quiz, "<===quiZ")
+  const questionCount = document.getElementById("question-count");
+  questionCount.innerText = parseInt(questionCount.innerText) + 1
   if (answer) {
     if (answer === Data[currentQuize].correct) {
       score++;
@@ -197,7 +216,6 @@ function nextQuestion() {
       console.log("you reached")
       quiz.innerHTML = `
         <h1> Congratulations 😍 <br/>You scored ${score}/${Data.length}</h1> 
-        
         `;
     } else {
       quiz.innerHTML = `<h1> 😓 You scored ${score}/${Data.length}
@@ -205,6 +223,7 @@ function nextQuestion() {
         `;
     }
   }
+  increaseProgressBar(10)
 }
 
 
