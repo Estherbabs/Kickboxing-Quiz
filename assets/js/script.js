@@ -21,7 +21,10 @@ function myfunction() {
 
   if (x.type === "password") {
     x.type = "text";
-  } else {
+    
+    alert("Login Successful")
+  } 
+  else {
     x.type = "password";
   }
 }
@@ -38,7 +41,17 @@ function validate() {
   }
 }
 
+const answersIndicatorContainer = document.querySelector(".answers-indicator")
 
+function answersIndicator(){
+  const totalQuestion = quiz.length;
+  for(let i=0; i<totalQuestion; i++){
+    const indicator = document.createElement("div");
+    answersIndicatorContainer.appendChild(indicator);
+    
+  }
+    
+}
 
 // Quiz Question //
 
@@ -202,6 +215,7 @@ function loadQuize() {
   prevBtn.addEventListener("click", PreviousQuestion);
 }
 
+
 function nextQuestion() {
   const answer = getValue();
   console.log(quiz, "<===quiZ")
@@ -223,59 +237,12 @@ function nextQuestion() {
       quiz.innerHTML = `<h1> 😓 You scored ${score}/${Data.length}
        
         `;
+
     }
   }
   increaseProgressBar(10)
 
 }
-
-var stars = document.getElementsByClassName("fa-solid");
-  var emoji = document.getElementById("emoji");
-
-
-  stars[0].onclick = function(){
-    stars[0].style.color = "#ffd93b";
-    stars[1].style.color = "#e4e4e4";
-    stars[2].style.color = "#e4e4e4";
-    stars[3].style.color = "#e4e4e4";
-    stars[4].style.color = "#e4e4e4";
-    emojis.style.transform = "translateX(0)";
-  }
-  stars[1].onclick = function(){
-    stars[0].style.color = "#ffd93b";
-    stars[1].style.color = "#ffd93b";
-    stars[2].style.color = "#e4e4e4";
-    stars[3].style.color = "#e4e4e4";
-    stars[4].style.color = "#e4e4e4";
-    emojis.style.transform = "translateX(-100px)";
-  }
-
-  stars[2].onclick = function(){
-    stars[0].style.color = "#ffd93b";
-    stars[1].style.color = "#ffd93b";
-    stars[2].style.color = "#ffd93b";
-    stars[3].style.color = "#e4e4e4";
-    stars[4].style.color = "#e4e4e4";
-    emojis.style.transform = "translateX(-200px)";
-  }
-
-  stars[3].onclick = function(){
-    stars[0].style.color = "#ffd93b";
-    stars[1].style.color = "#ffd93b";
-    stars[2].style.color = "#ffd93b";
-    stars[3].style.color = "#ffd93b";
-    stars[4].style.color = "#e4e4e4";
-    emojis.style.transform = "translateX(-300px)";
-  }
-
-  stars[4].onclick = function(){
-    stars[0].style.color = "#ffd93b";
-    stars[1].style.color = "#ffd93b";
-    stars[2].style.color = "#ffd93b";
-    stars[3].style.color = "#ffd93b";
-    stars[4].style.color = "#ffd93b";
-    emojis.style.transform = "translateX(-400px)";
-  }
 
 
 
@@ -302,3 +269,23 @@ function unCheckAnswer() {
     answer.checked = false;
   });
 }
+
+const feedback = document.querySelector('.feedback');
+const emoji = document.querySelector('.emoji');
+const textarea = document.querySelector('textarea');
+const btn = document.querySelector('.btn');
+
+emoji.addEventListener('click',(e) =>{
+
+if(e.target.className.includes('emoji')) return;
+
+textarea.classList.add('textarea--active');
+btn.classList.add('btn--active');
+
+})
+
+container.addEventListener('mouseleave',()=>{
+
+textarea.classList.remove('textarea--active');
+btn.classList.remove('btn--active');
+})
