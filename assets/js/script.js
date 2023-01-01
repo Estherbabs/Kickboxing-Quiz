@@ -1,19 +1,21 @@
 // Login //
 
+const options = document.getElementById("options");
+const questionCount = document.getElementById("question-count");
+const feedbackText = document.getElementById("feedback-text")
+
 window.addEventListener("load", function () {
-
-  const localStrorageName = JSON.parse(localStorage.getItem("username"))
-  console.log(window.location.pathname)
-  if (!localStrorageName && window.location.pathname === '/quiz.html') {
-    window.location.replace('index.html')
+  const localStorageName = JSON.parse(localStorage.getItem("username"));
+  console.log(localStorageName, "<==ls");
+  if (!localStorageName && window.location.pathname === "/quiz.html") {
+    window.location.replace("index.html");
   }
+});
 
-})
-
-
+// This function is for the user to login into the game//
 function quit() {
-  localStorage.removeItem("username")
-  window.location = 'index.html'
+  localStorage.removeItem("username");
+  window.location = "index.html";
 }
 
 function myfunction() {
@@ -22,18 +24,19 @@ function myfunction() {
   if (x.type === "password") {
     x.type = "text";
     
-    alert("Login Successful")
-  } 
-  else {
+    alert("Login Successful");
+  } else {
     x.type = "password";
   }
 }
 
+// This function is to validate the login for username and password//
 function validate() {
-  var username = document.getElementById("username")
+  var username = document.getElementById("username");
   if (username.value.trim() != "") {
     alert("Login Successful");
-    localStorage.setItem("username", JSON.stringify(username.value))
+    localStorage.setItem("username", JSON.stringify(username.value));
+    username.value = ""
     window.location.replace("quiz.html");
     return false;
   } else {
