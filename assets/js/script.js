@@ -44,17 +44,6 @@ function validate() {
   }
 }
 
-//This code is to indicate the if the user chose the correct or incorrect answers//
-const answersIndicatorContainer = document.querySelector(".answers-indicator");
-
-function answersIndicator() {
-  const totalQuestion = quiz.length;
-  for (let i = 0; i < totalQuestion; i++) {
-    const indicator = document.createElement("div");
-    answersIndicatorContainer.appendChild(indicator);
-  }
-}
-
 // Quiz Question //
 
 const Data = [
@@ -198,6 +187,7 @@ nextBtn.disabled = true;
 
 loadQuize(0);
 
+// function to for next quiz question//
 function loadQuize(currentQuize) {
   unCheckAnswer();
   let nextOption = Data[currentQuize];
@@ -210,35 +200,6 @@ function loadQuize(currentQuize) {
   option3.innerText = nextOption.c;
   option4.innerText = nextOption.d;
 }
-
-
-// function nextQuestion() {
-//   const answer = getValue();
-//   console.log(quiz, "<===quiZ")
-//   const questionCount = document.getElementById("question-count");
-//   questionCount.innerText = parseInt(questionCount.innerText) + 1
-//   if (answer) {
-//     if (answer === Data[currentQuize].correct) {
-//       score++;
-//     }
-//     currentQuize++;
-//     if (currentQuize < Data.length) {
-//       loadQuize();
-//     } else if (score === Data.length) {
-//       console.log("you reached")
-//       quiz.innerHTML = `
-//         <h1> Congratulations 😍 <br/>You scored ${score}/${Data.length}</h1>
-//         `;
-//     } else {
-//       quiz.innerHTML = `<h1> 😓 You scored ${score}/${Data.length}
-
-//         `;
-
-//     }
-//   }
-//   increaseProgressBar(10)
-
-// }
 
 function getValue() {
   let value = undefined;
@@ -273,6 +234,8 @@ nextBtn.addEventListener("click", () => {
   }
 });
 
+
+//This code is to indicate the if the user chose the correct or incorrect answers//
 function checkAnswer(e) {
   var dataId = options.getAttribute("data-id");
   const data = Data.find((x) => x.id == dataId);
@@ -296,7 +259,7 @@ function checkAnswer(e) {
     feedbackText.innerText = parseInt(feedbackText.innerText) + 1
   } else {
     console.log(options.childNodes, "wrong");
-    emojiContainer.innerHTML = `<img src="../assets/images/sad-face" alt="sad">`;
+    emojiContainer.innerHTML = `<img src="../assets/images/sad-face.png" alt="sad">`;
 
   }
   nextBtn.disabled = false;
