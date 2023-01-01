@@ -212,43 +212,33 @@ function loadQuize(currentQuize) {
 }
 
 
-function nextQuestion() {
-  const answer = getValue();
-  console.log(quiz, "<===quiZ")
-  const questionCount = document.getElementById("question-count");
-  questionCount.innerText = parseInt(questionCount.innerText) + 1
-  if (answer) {
-    if (answer === Data[currentQuize].correct) {
-      score++;
-    }
-    currentQuize++;
-    if (currentQuize < Data.length) {
-      loadQuize();
-    } else if (score === Data.length) {
-      console.log("you reached")
-      quiz.innerHTML = `
-        <h1> Congratulations 😍 <br/>You scored ${score}/${Data.length}</h1> 
-        `;
-    } else {
-      quiz.innerHTML = `<h1> 😓 You scored ${score}/${Data.length}
-       
-        `;
+// function nextQuestion() {
+//   const answer = getValue();
+//   console.log(quiz, "<===quiZ")
+//   const questionCount = document.getElementById("question-count");
+//   questionCount.innerText = parseInt(questionCount.innerText) + 1
+//   if (answer) {
+//     if (answer === Data[currentQuize].correct) {
+//       score++;
+//     }
+//     currentQuize++;
+//     if (currentQuize < Data.length) {
+//       loadQuize();
+//     } else if (score === Data.length) {
+//       console.log("you reached")
+//       quiz.innerHTML = `
+//         <h1> Congratulations 😍 <br/>You scored ${score}/${Data.length}</h1>
+//         `;
+//     } else {
+//       quiz.innerHTML = `<h1> 😓 You scored ${score}/${Data.length}
 
-    }
-  }
-  increaseProgressBar(10)
+//         `;
 
-}
+//     }
+//   }
+//   increaseProgressBar(10)
 
-
-
-function PreviousQuestion() {
-  if (currentQuize.valueOf() === 0) {
-    alert("Can't go back anymore");
-  } else {
-    loadQuize();
-  }
-}
+// }
 
 function getValue() {
   let value = undefined;
@@ -266,22 +256,50 @@ function unCheckAnswer() {
   });
 }
 
-const feedback = document.querySelector('.feedback');
-const emoji = document.querySelector('.emoji');
-const textarea = document.querySelector('textarea');
-const btn = document.querySelector('.btn');
 
-emoji.addEventListener('click',(e) =>{
+const btn = document.querySelector(".btn");
 
-if(e.target.className.includes('emoji')) return;
 
-textarea.classList.add('textarea--active');
-btn.classList.add('btn--active');
 
-})
+nextBtn.addEventListener("click", () => {
+  nextBtn.disabled = true;
+  option1.disabled = false;
+  option2.disabled = false;
+  option3.disabled = false;
+  option4.disabled = false;
+  loadQuize(parseInt(questionCount.innerText - 1));
+  if(questionCount.innerText == Data.length) {
+    feedback.style.display = 'block'
+  }
+});
 
-container.addEventListener('mouseleave',()=>{
+function checkAnswer(e) {
+  var dataId = options.getAttribute("data-id");
+  const data = Data.find((x) => x.id == dataId);
+  const emojiContainer = document.getElementById("emoji");
+  const selectedOption = e.target.innerText;
+  let correctAnswers = 0;
+  
+  option1.disabled = true;
+  option2.disabled = true;
+  option3.disabled = true;
+  option4.disabled = true;
+  questionCount.innerText = parseInt(questionCount.innerText) + 1
+  increaseProgressBar()
 
-textarea.classList.remove('textarea--active');
-btn.classList.remove('btn--active');
-})
+
+  //console.log(option.innerText, "<===eeee")
+
+  if (selectedOption === data.correct) {
+    //alert("correct!")
+    emojiContainer.innerHTML = `<img src="../assets/images/smiley-emoji.png" alt="happy">`;
+    feedbackText.innerText = parseInt(feedbackText.innerText) + 1
+  } else {
+    console.log(options.childNodes, "wrong");
+    emojiContainer.innerHTML = `<img src="../assets/images/sad.png" alt="sad">`;
+
+  }
+  nextBtn.disabled = false;
+
+  console.log(options.childNodes, "<===data");
+}

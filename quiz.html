@@ -8,44 +8,29 @@
     <title>Kickboxing Quiz</title>
 </head>
 <body>
-  <button id="quit_button" onclick="quit()">
-     Refresh
-  </button>
+  <header>
+    <nav class="nav-wrapper">
+      <div class="container-guru">
+        <a href="index.html" class="brand-logo">KICKBOXING QUIZ</a>
+      </div>
+      <a href="#" id="quit_button" onclick="quit()">LOGOUT</a>
+    </nav>
+  </header>
 
-  <div id="progress-bar">
-    <h4>Progress Bar</h4>
-    <div id="myBar"></div>
-  </div>
-
-  <div id="question-count-container">
-    <p> <span id="question-count">1</span> / 10 </p>
-  </div>
-
-
-  <div class="quiz-container" id="quiz">
-    <h3>Kickboxing Quiz</h3>
-    <ul>
-      <li>
-        <input name="answer" type="radio" id="a" class="answer">
-        <label id="option1" for="a"></label>
-      </li>
-      <li>
-        <input name="answer" type="radio" id="b" class="answer">
-        <label id="option2" for="b"></label>
-      </li>
-      <li>
-        <input name="answer" type="radio" id="c" class="answer">
-        <label id="option3" for="c"></label>
-      </li>
-      <li>
-        <input name="answer" type="radio" id="d" class="answer">
-        <label id="option4" for="d"></label>
-      </li>
-    </ul>
-    <div class="btn">
-      <button id="btn-prev">Previous</button>
-      <button id="btn-next">Next</button>
+  <div class="counter-container">
+    <div id="progress-bar">
+      <div id="myBar"></div>
     </div>
+    <div id="question-count-container">
+      <p>
+        <span id="question-count">1</span>
+        " / 10"
+      </p>
+    </div>
+  </div>
+  
+
+
 
     <div class="answers-indicator">
       <div></div>
