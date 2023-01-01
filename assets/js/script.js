@@ -44,136 +44,129 @@ function validate() {
   }
 }
 
-const answersIndicatorContainer = document.querySelector(".answers-indicator")
+//This code is to indicate the if the user chose the correct or incorrect answers//
+const answersIndicatorContainer = document.querySelector(".answers-indicator");
 
-function answersIndicator(){
+function answersIndicator() {
   const totalQuestion = quiz.length;
-  for(let i=0; i<totalQuestion; i++){
+  for (let i = 0; i < totalQuestion; i++) {
     const indicator = document.createElement("div");
     answersIndicatorContainer.appendChild(indicator);
-    
   }
-    
 }
 
 // Quiz Question //
 
-const Data = [{
+const Data = [
+  {
+    id: 1,
     question: "Which one of these rules are allowed in Kickboxing?",
     a: "Kicks above the elbow",
     b: "Throwing punching in chest",
     c: "Sweeping opponent to the ground",
     d: "Kicks below the waist",
-    correct: "d",
-
-
+    correct: "Kicks below the waist",
   },
 
   {
-
+    id: 2,
     question: "Where did Kickboxing originate from?",
     a: "America",
     b: "Germany",
     c: "Australia",
     d: "Southeast Asia",
-    correct: "d",
-
+    correct: "Southeast Asia",
   },
 
   {
+    id: 3,
     question: "Which one is the benefit of Kickboxing?",
     a: "More sleep",
     b: "Hydration",
     c: "Self-Defense",
     d: "All of the above",
     correct: "c",
-
-
   },
 
   {
+    id: 4,
     question: "Which of these is not a Kickboxing style?",
     a: "Muay Thai",
     b: "Firestarter",
     c: "Full Contact Karate",
     d: "Savate",
-    correct: "b",
-
+    correct: "Firestarter",
   },
 
   {
+    id: 5,
     question: "Which country does Muay Thai orginates from?",
     a: "Japan",
     b: "China",
     c: "Thailand",
     d: "South Korea",
-    correct: "c",
+    correct: "Thailand",
   },
 
   {
+    id: 6,
     question: "Who is the 2022 Heavyweight UFC Champion?",
     a: "Francis Ngannou",
     b: "Yoel Romero",
     c: "Colby Covington",
     d: "Kamaro Usman",
-    correct: "a",
-
-
+    correct: "Francis Ngannou",
   },
 
   {
+    id: 7,
     question: "How many divisions are in the UFC?",
     a: "8",
     b: "15",
     c: "11",
     d: "12",
-    correct: "d",
-
-
+    correct: "12",
   },
 
   {
+    id: 8,
     question: "When year was the UFC founded?",
     a: "1993",
     b: "1972",
     c: "1985",
     d: "1991",
-    correct: "a",
-
+    correct: "1993",
   },
 
   {
+    id: 9,
     question: "Which one is considered a mixed martial arts (MMA)?",
     a: "Taekwondo",
     b: "Karate",
     c: "Hybrid combat sport",
     d: "Judo",
-    correct: "c",
-
+    correct: "Hybrid combat sport",
   },
 
   {
+    id: 10,
     question: "Which is the main category of Martial arts?",
     a: "Japanese",
     b: "Chinese",
     c: "Korean",
     d: "All of the above",
-    correct: "d",
-
+    correct: "All of the above",
   },
+];
 
-]
+// This function is for the progress bar to indicate how many questions answered//
+function increaseProgressBar(incVal) {
+  const myBar = document.getElementById("myBar");
+  myBar.style.backgroundColor = "lime"
+  const questionCounter = parseInt(questionCount.innerText);
+  const maxQuestions = Data.length;
 
-
-function increaseProgressBar (incVal) {
-     const myBar = document.getElementById("myBar")
-     const questionCount = document.getElementById("question-count");
-
-     const questionCounter = parseInt(questionCount.innerText)
-     const maxQuestions = Data.length
-
-      myBar.style.width = `${(questionCounter/maxQuestions) * 100}%`;
-  
+  myBar.style.width = `${(questionCounter / maxQuestions) * 100}%`;
 }
 
 
@@ -182,12 +175,10 @@ function increaseProgressBar (incVal) {
 
  // Sourced code from a youtuber (CodeWithDarkwa) //
 const grabId = (idName) => {
-
   const ElementId = document.getElementById(idName);
-  console.log(ElementId, "<==idname")
+  console.log(ElementId, "<==idname");
   if (ElementId) return ElementId;
   // throw new Error(`cannot find the id ${idName}`);
-
 };
 const option1 = grabId("option1");
 const option2 = grabId("option2");
@@ -195,27 +186,29 @@ const option3 = grabId("option3");
 const option4 = grabId("option4");
 let nextBtn = grabId("btn-next");
 let prevBtn = grabId("btn-prev");
+
 const quiz = grabId("quiz");
 const question = document.querySelector("h3");
 const answers = document.querySelectorAll(".answer");
 
-let currentQuize = 0;
+//let currentQuize = 0;
 let score = 0;
 
-loadQuize();
+nextBtn.disabled = true;
 
-function loadQuize() {
+loadQuize(0);
 
+function loadQuize(currentQuize) {
   unCheckAnswer();
   let nextOption = Data[currentQuize];
-  console.log(nextOption, "next")
+
+  options.setAttribute("data-id", nextOption.id);
+
   question.innerText = nextOption.question;
   option1.innerText = nextOption.a;
   option2.innerText = nextOption.b;
   option3.innerText = nextOption.c;
   option4.innerText = nextOption.d;
-  nextBtn.addEventListener("click", nextQuestion);
-  prevBtn.addEventListener("click", PreviousQuestion);
 }
 
 
