@@ -254,11 +254,11 @@ function checkAnswer(e) {
 
   if (selectedOption === data.correct) {
     //alert("correct!")
-    emojiContainer.innerHTML = `<img src="../assets/images/smiley-emoji.png" alt="happy">`;
+    emojiContainer.innerHTML = `<img src="../assets/images/smileyemoji.png" alt="happy">`;
     feedbackText.innerText = parseInt(feedbackText.innerText) + 1
   } else {
     console.log(options.childNodes, "wrong");
-    emojiContainer.innerHTML = `<img src="../assets/images/sad-face.png" alt="sad">`;
+    emojiContainer.innerHTML = `<img src="../assets/images/sadface.png" alt="sad">`;
 
   }
   nextBtn.disabled = false;
