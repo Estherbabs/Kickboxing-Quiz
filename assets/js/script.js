@@ -259,7 +259,7 @@ function checkAnswer(e) {
     feedbackText.innerText = parseInt(feedbackText.innerText) + 1
   } else {
     console.log(options.childNodes, "wrong");
-    emojiContainer.innerHTML = `<img src="../assets/images/sad-face.png" alt="sad">`;
+    emojiContainer.innerHTML = `<img src="../assets/images/sad-face2.png" alt="sad">`;
 
   }
   nextBtn.disabled = false;
