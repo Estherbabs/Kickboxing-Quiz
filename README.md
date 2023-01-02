@@ -34,7 +34,7 @@ I created a simplified quiz game for kickboxing lovers called guru quiz. This ga
 In the game, there is a login page with a background of two kickboxers, after login there is a game area. In this project is to showcase efficiency in HTML, CSS and Javascript. I hope to create a fun game for the users.
 
 
-![capture 2](https://user-images.githubusercontent.com/108898698/201009623-3e8a5b4f-a47d-4556-825d-db4dddf0adef.JPG)
+![image](https://user-images.githubusercontent.com/108898698/210211405-398a44d1-b296-4907-9e19-2d9545a0e85a.png)
 
 ***
 ## FEATURES
@@ -44,19 +44,19 @@ In the game, there is a login page with a background of two kickboxers, after lo
 - Featured a logo, to allow users know the name of the quiz game.
 
 
-![image](https://user-images.githubusercontent.com/108898698/201007326-54eddf4d-77d6-4d78-b305-1358f4da4e72.png)
+![image](https://user-images.githubusercontent.com/108898698/210211529-ae575505-5d5c-422f-8c3d-de586be8a2c0.png)
 
 - __The login page__
 
 The login page includes a photograph with a login box to allow users choose a username and login into the game. The page also introduces users to Guru Quiz.
 
-![Capture JPG3](https://user-images.githubusercontent.com/108898698/201025775-bde501b1-3de3-4ecd-ba88-41ef582e61b2.JPG)
+![image](https://user-images.githubusercontent.com/108898698/210211622-971be61b-771c-48e1-a946-8b5acec6805f.png)
 
 - __Quiz area__
 - The Quiz area is where the questions begins, this feature shows a box with different questions with buttons for previous or next. Although for this game, users are not allowed to go back, that's why a refresh button is located in the quiz area to refresh game to start from the beginning. Starting off in this quiz area gets users excited because they will allows look forward to the next question till they get to the end.
  
 
-![Capture JPG4](https://user-images.githubusercontent.com/108898698/201026310-dbd7b29e-7d1e-409a-aad0-dc20e67cc21c.JPG)
+![image](https://user-images.githubusercontent.com/108898698/210212478-2084dc24-d399-4320-8563-ee497c25d959.png)
 
 
 - __Score card__
@@ -70,6 +70,8 @@ The login page includes a photograph with a login box to allow users choose a us
  
 - As a first time user, I want to be able to create username and navigate into the quiz area.
 - As a user, I want to be able to answer all questions and navigate to the last question.
+- As a user, I am able login and logout.
+- As a user, I am able to know when I get the answer correct or incorrect.
 - As a user, I want to be able to see what I scored in answering all questions.
 - As a user, I want to be able to start the game again.
 
@@ -140,7 +142,7 @@ Throughout the project, I have used GitHubs application. This program have allow
 ![URL Snip](![Capture JPG9](https://user-images.githubusercontent.com/108898698/201040498-50aa4af7-cb70-4e62-9960-fb1cf7cb3e8d.JPG))
 
 - Click the link or copy the URL to a browser to reach the deployed page
-https://estherbabs.github.io/Guru-Quiz/
+https://estherbabs.github.io/Kickboxing-Quiz/
 
 The site is now live.
 ***
