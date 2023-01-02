@@ -1,4 +1,4 @@
-# GURU QUIZ
+# KICKBOXING QUIZ
 
 
 
