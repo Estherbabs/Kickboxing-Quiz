@@ -2,7 +2,7 @@
 
 const options = document.getElementById("options");
 const questionCount = document.getElementById("question-count");
-const feedbackText = document.getElementById("feedback-text")
+const feedbackText = document.getElementById("feedback-text");
 
 window.addEventListener("load", function () {
   const localStorageName = JSON.parse(localStorage.getItem("username"));
@@ -23,7 +23,7 @@ function myfunction() {
 
   if (x.type === "password") {
     x.type = "text";
-    
+
     alert("Login Successful");
   } else {
     x.type = "password";
@@ -36,7 +36,7 @@ function validate() {
   if (username.value.trim() != "") {
     alert("Login Successful");
     localStorage.setItem("username", JSON.stringify(username.value));
-    username.value = ""
+    username.value = "";
     window.location.replace("quiz.html");
     return false;
   } else {
@@ -148,24 +148,30 @@ const Data = [
   },
 ];
 
+function shuffleArray(arr) {
+  for (let i = Data.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    let temp = Data[i];
+    Data[i] = Data[j];
+    Data[j] = temp;
+  }
+}
+shuffleArray(Data);
+
 // This function is for the progress bar to indicate how many questions answered//
 function increaseProgressBar(incVal) {
   const myBar = document.getElementById("myBar");
-  myBar.style.backgroundColor = "lime"
+  myBar.style.backgroundColor = "lime";
   const questionCounter = parseInt(questionCount.innerText);
   const maxQuestions = Data.length;
 
   myBar.style.width = `${(questionCounter / maxQuestions) * 100}%`;
 }
 
-
-
-
-
- // Sourced code from a youtuber (CodeWithDarkwa) //
+// Sourced code from a youtuber (CodeWithDarkwa) //
 const grabId = (idName) => {
   const ElementId = document.getElementById(idName);
-  console.log(ElementId, "<==idname");
+  
   if (ElementId) return ElementId;
   // throw new Error(`cannot find the id ${idName}`);
 };
@@ -217,10 +223,7 @@ function unCheckAnswer() {
   });
 }
 
-
 const btn = document.querySelector(".btn");
-
-
 
 nextBtn.addEventListener("click", () => {
   nextBtn.disabled = true;
@@ -229,11 +232,10 @@ nextBtn.addEventListener("click", () => {
   option3.disabled = false;
   option4.disabled = false;
   loadQuize(parseInt(questionCount.innerText - 1));
-  if(questionCount.innerText == Data.length) {
-    feedback.style.display = 'block'
+  if (questionCount.innerText == Data.length) {
+    feedback.style.display = "block";
   }
 });
-
 
 //This code is to indicate the if the user chose the correct or incorrect answers//
 function checkAnswer(e) {
@@ -242,26 +244,23 @@ function checkAnswer(e) {
   const emojiContainer = document.getElementById("emoji");
   const selectedOption = e.target.innerText;
   let correctAnswers = 0;
-  
+
   option1.disabled = true;
   option2.disabled = true;
   option3.disabled = true;
   option4.disabled = true;
-  questionCount.innerText = parseInt(questionCount.innerText) + 1
-  increaseProgressBar()
-
-
+  questionCount.innerText = parseInt(questionCount.innerText) + 1;
+  increaseProgressBar();
 
   if (selectedOption === data.correct) {
     //alert("correct!")
     emojiContainer.innerHTML = `<img src="../assets/images/smileyemoji.png" alt="happy">`;
-    feedbackText.innerText = parseInt(feedbackText.innerText) + 1
+    feedbackText.innerText = parseInt(feedbackText.innerText) + 1;
   } else {
-    console.log(options.childNodes, "wrong");
+   
     emojiContainer.innerHTML = `<img src="../assets/images/sadface.png" alt="sad">`;
-
   }
   nextBtn.disabled = false;
 
-  console.log(options.childNodes, "<===data");
+  
 }
