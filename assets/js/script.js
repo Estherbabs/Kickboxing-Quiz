@@ -161,7 +161,7 @@ shuffleArray(Data);
 // This function is for the progress bar to indicate how many questions answered//
 function increaseProgressBar(incVal) {
   const myBar = document.getElementById("myBar");
-  myBar.style.backgroundColor = "lime";
+  myBar.style.backgroundColor = "grey";
   const questionCounter = parseInt(questionCount.innerText);
   const maxQuestions = Data.length;
 
