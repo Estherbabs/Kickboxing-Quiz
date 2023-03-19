@@ -46,8 +46,7 @@ function validate() {
 
 // Quiz Question //
 
-const Data = [
-  {
+const Data = [{
     id: 1,
     question: "Which one of these rules are allowed in Kickboxing?",
     a: "Kicks above the elbow",
@@ -171,7 +170,7 @@ function increaseProgressBar(incVal) {
 // Sourced code from a youtuber (CodeWithDarkwa) //
 const grabId = (idName) => {
   const ElementId = document.getElementById(idName);
-  
+
   if (ElementId) return ElementId;
   // throw new Error(`cannot find the id ${idName}`);
 };
@@ -233,6 +232,36 @@ nextBtn.addEventListener("click", () => {
   option4.disabled = false;
   loadQuize(parseInt(questionCount.innerText - 1));
   if (questionCount.innerText == Data.length) {
+    const highestScoreEl = document.getElementById("highestscore")
+    const highestScore = localStorage.getItem("scoredData")
+    const score = parseInt(feedbackText.innerText)
+    console.log(highestScore)
+    if (highestScore) {
+      const scoreData = JSON.parse(highestScore)
+      if (scoreData.username == localStorage.getItem("username")) {
+        highestScoreEl.innerText = "You have the highest score...congratulations!"
+        localStorage.setItem("scoredData", JSON.stringify({
+          username: localStorage.getItem("username"),
+        }))
+      } else {
+        if (+scoreData.score < score) {
+          highestScoreEl.innerText = "You have the highest score...congratulations!"
+          localStorage.setItem("scoredData", JSON.stringify({
+            username: localStorage.getItem("username"),
+            score
+          }))
+        } else {
+          highestScoreEl.innerText = scoreData.username + " has the highest score: " + scoreData.score
+        }
+
+      }
+    } else {
+      highestScoreEl.innerText = "You have the highest score...congratulations!"
+      localStorage.setItem("scoredData", JSON.stringify({
+        username: localStorage.getItem("username"),
+        score
+      }))
+    }
     feedback.style.display = "block";
   }
 });
@@ -252,15 +281,23 @@ function checkAnswer(e) {
   questionCount.innerText = parseInt(questionCount.innerText) + 1;
   increaseProgressBar();
 
+
+
+
+
+
   if (selectedOption === data.correct) {
+
+
+
     //alert("correct!")
     emojiContainer.innerHTML = `<img src="../assets/images/smileyemoji.png" alt="happy">`;
     feedbackText.innerText = parseInt(feedbackText.innerText) + 1;
   } else {
-   
+
     emojiContainer.innerHTML = `<img src="../assets/images/sadface.png" alt="sad">`;
   }
   nextBtn.disabled = false;
 
-  
+
 }
