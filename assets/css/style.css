@@ -333,7 +333,7 @@ h4{
   }
 
   #options {
-    grid-template-columns: 1fr;
+    /*grid-template-columns: 1fr; */
 }
   .form input[type="submit"] {
     margin-left: 40px;
@@ -355,7 +355,13 @@ h4{
 /*For medium screens size from 800px wide and down */
 @media screen and (max-width: 800px) {
   body {
-    height: 67vh;
+    height: 105vh;
+    background-size: inherit;
+  }
+
+  .quiz-grid{
+    flex-direction: column;
+    height: 67%;
   }
 
   .quiz-container{
@@ -363,9 +369,17 @@ h4{
    
   }
 
+  #options button{
+    margin-top: 1rem;
+  }
+
   .form {
     width: 55%;
     left: 49%;
+  }
+
+  .feedback-content {
+    height: 55vh;
   }
 
   .form input[type="submit"] {
@@ -374,6 +388,12 @@ h4{
   
   h3{
     font-size: 16px;
+  }
+
+  #emoji img {
+    width: 75px;
+    margin-top: 1rem;
+    height: 72%;
   }
 
   label{
