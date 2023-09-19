@@ -33,7 +33,7 @@ function myfunction() {
 // This function is to validate the login for username and password//
 function validate() {
   var username = document.getElementById("username");
-  if (username.value.trim() != "" && !/^[A-Za-z\s]*$/.test(username.value.trim())) {
+  if (username.value.trim().length >4 && username.value.trim() != "" && /^[A-Za-z\s]*$/.test(username.value.trim())) {
     alert("Login Successful");
     localStorage.setItem("username", JSON.stringify(username.value));
     username.value = "";
