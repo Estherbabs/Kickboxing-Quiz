@@ -33,7 +33,15 @@ function myfunction() {
 // This function is for validation of the login for username and password//
 function validate() {
   var username = document.getElementById("username");
-  
+  if (username.value.trim().length >4 && username.value.trim() != "" && /^[A-Za-z\s]*$/.test(username.value.trim())) {
+    alert("Login Successful");
+    localStorage.setItem("username", JSON.stringify(username.value));
+    username.value = "";
+    window.location.replace("quiz.html");
+    return false;
+  } else {
+    alert("Login Failed, please enter username longer than 5 char");
+  }
 }
 
 // Quiz Question //
