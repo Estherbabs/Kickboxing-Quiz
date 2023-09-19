@@ -291,11 +291,11 @@ function checkAnswer(e) {
 
 
     //alert("correct!")
-    emojiContainer.innerHTML = `<img src="../assets/images/smileyemoji.png" alt="happy">`;
+    emojiContainer.innerHTML = `<img src="assets/images/smileyemoji.png" alt="happy">`;
     feedbackText.innerText = parseInt(feedbackText.innerText) + 1;
   } else {
 
-    emojiContainer.innerHTML = `<img src="../assets/images/sadface.png" alt="sad">`;
+    emojiContainer.innerHTML = `<img src="assets/images/sadface.png" alt="sad">`;
   }
   nextBtn.disabled = false;
 
