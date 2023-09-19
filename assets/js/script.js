@@ -33,7 +33,7 @@ function myfunction() {
 // This function is to validate the login for username and password//
 function validate() {
   var username = document.getElementById("username");
-  if (username.value.trim() != "") {
+  if (username.value.trim() != "" && !/^[A-Za-z\s]*$/.test(username.value.trim())) {
     alert("Login Successful");
     localStorage.setItem("username", JSON.stringify(username.value));
     username.value = "";
@@ -294,7 +294,7 @@ function checkAnswer(e) {
     emojiContainer.innerHTML = `<img src="assets/images/smileyemoji.png" alt="happy">`;
     feedbackText.innerText = parseInt(feedbackText.innerText) + 1;
   } else {
-    
+
 
     emojiContainer.innerHTML = `<img src="assets/images/sadface.png" alt="sad">`;
   }
