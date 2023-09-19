@@ -30,7 +30,7 @@ function myfunction() {
   }
 }
 
-// This function is to validate the login for username and password//
+// This function is for validation of the login for username and password//
 function validate() {
   var username = document.getElementById("username");
   if (username.value.trim().length >4 && username.value.trim() != "" && /^[A-Za-z\s]*$/.test(username.value.trim())) {
