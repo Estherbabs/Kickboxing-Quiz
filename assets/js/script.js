@@ -294,6 +294,7 @@ function checkAnswer(e) {
     emojiContainer.innerHTML = `<img src="assets/images/smileyemoji.png" alt="happy">`;
     feedbackText.innerText = parseInt(feedbackText.innerText) + 1;
   } else {
+    
 
     emojiContainer.innerHTML = `<img src="assets/images/sadface.png" alt="sad">`;
   }
