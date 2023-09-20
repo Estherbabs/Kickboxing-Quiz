@@ -34,7 +34,7 @@ I created a simplified quiz game for kickboxing lovers called guru quiz. This ga
 In the game, there is a login page with a background of two kickboxers, after login there is a game area. In this project is to showcase efficiency in HTML, CSS and Javascript. I hope to create a fun game for the users.
 
 
-![image](https://user-images.githubusercontent.com/108898698/210211405-398a44d1-b296-4907-9e19-2d9545a0e85a.png)
+![Screenshot 2023-09-20 at 20 38 08](https://github.com/Estherbabs/Kickboxing-Quiz/assets/108898698/980eb1be-f80e-4dc4-bd84-3872681edc41)
 
 ***
 ## FEATURES
@@ -44,25 +44,25 @@ In the game, there is a login page with a background of two kickboxers, after lo
 - Featured a logo, to allow users know the name of the quiz game.
 
 
-![image](https://user-images.githubusercontent.com/108898698/210211529-ae575505-5d5c-422f-8c3d-de586be8a2c0.png)
+![Screenshot 2023-09-20 at 20 49 37](https://github.com/Estherbabs/Kickboxing-Quiz/assets/108898698/15ce70c7-fbe0-4b2b-83b7-3367c700bd2e)
 
 - __The login page__
 
 The login page includes a photograph with a login box to allow users choose a username and login into the game. The page also introduces users to Guru Quiz.
 
-![image](https://user-images.githubusercontent.com/108898698/210211622-971be61b-771c-48e1-a946-8b5acec6805f.png)
+![Screenshot 2023-09-20 at 20 49 37](https://github.com/Estherbabs/Kickboxing-Quiz/assets/108898698/c966f762-c1d0-4d86-b083-22a3ddd5924c)
 
 - __Quiz area__
 - The Quiz area is where the questions begins, this feature shows a box with different questions with buttons for previous or next. Although for this game, users are not allowed to go back, that's why a refresh button is located in the quiz area to refresh game to start from the beginning. Starting off in this quiz area gets users excited because they will allows look forward to the next question till they get to the end.
  
 
-![image](https://user-images.githubusercontent.com/108898698/210212478-2084dc24-d399-4320-8563-ee497c25d959.png)
-
+![Screenshot 2023-09-20 at 20 51 29](https://github.com/Estherbabs/Kickboxing-Quiz/assets/108898698/6e5ab951-f1c3-4c45-8c50-7326cf0b1fe4)
 
 - __Score card__
 - This section is to allow users see how many questions they scored right or wrong. There is an emoji is the user scored all questions right or wrong.
 
-![Capture JPG5](https://user-images.githubusercontent.com/108898698/201027488-a51850a3-6815-4b27-b8e5-2aa7c3477917.JPG)
+![Screenshot 2023-09-20 at 20 58 47](https://github.com/Estherbabs/Kickboxing-Quiz/assets/108898698/875bced4-2052-43d9-b698-9f4a27b2c220)
+
 
 
 ## UX &#8722; User Experience Design
@@ -131,7 +131,7 @@ I liked the quiz to look sporty and appealing to users who like kickboxing or li
 ![Desktop Lighthouse Results](![Capture JPG8](https://user-images.githubusercontent.com/108898698/201039481-3749f0fc-17ab-4a2d-8fee-1378d28fcbc0.JPG))
 ***
 ## Bugs
-- No unfixed bugs
+- The smiley and sad emoji images render a 404 error in the console. This was due to the absolute file path set for the image in the Javascript file. I have corrected this bug by removing the ../ from the smiley and sad emoji from the javascript codes.
 ***
 ## Deployment
 Throughout the project, I have used GitHubs application. This program have allowed me to stage and commit files as and when necessary. Once committed, deploying the project to a live site has been achieved.
